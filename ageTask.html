@@ -19,7 +19,7 @@
         const birthYear = Number(prompt("Input your Year of Birth"));
 
         function yourAge (a,b){
-            const age = (presentYear - birthYear)*365;
+            const age = (a - b)*365;
 
             if(age < 10000) {
                 console.log("You are " + age + " years old. You are young!");
