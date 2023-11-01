@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // TASK 2
+        // Calculate your days in age using the provided formula and use the instructions to solve it.
+        //Formula: (presentYear - birthYear) * 365;
+        //Instruction:
+        //Let the user input the value of the presentYear and birthYear.
+        //Create a function that would calculate the formula passing the presentYear and birthYear as an argument.
+        //If the answer is less than 10,000, display  “you are young” to the user. If it is above 10,000 display “you are old”
+
+        const presentYear = Number(prompt("Input the current year"));
+        const birthYear = Number(prompt("Input your Year of Birth"));
+
+        function yourAge (a,b){
+            const age = (presentYear - birthYear)*365;
+
+            if(age < 10000) {
+                console.log("You are " + age + " years old. You are young!");
+            }else{
+                console.log( "You are " + age + " years old. You are old! Take life easy.")
+            }
+        }
+        yourAge(presentYear, birthYear)
+    </script>
+</body>
+</html>
